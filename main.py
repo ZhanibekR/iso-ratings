@@ -1,4 +1,4 @@
-import parsers.chemistry
+import parsers.mathematics
 import plotly.graph_objects as go
 
 class SubjectRating:
