@@ -82,15 +82,15 @@ class SubjectRating:
             traces.append(trace)
         
         for trace in traces: fig.add_trace(trace)
-        self._update_fig(fig, 'Командный рейтинг на IChO', 'Год', 'Место в рейтинге')
+        self._update_fig(fig, 'Командный рейтинг на IMO', 'Год', 'Место в рейтинге')
 
-        with open(f'exports/html/chemistry.html', 'w') as f:
+        with open(f'exports/html/mathematics.html', 'w') as f:
             f.write(fig.to_html(include_plotlyjs='cdn'))
-        fig.write_image(f'exports/svg/chemistry.svg')
-        fig.write_image(f'exports/pdf/chemistry.pdf')
-        fig.write_image(f'exports/jpg/chemistry.jpg', scale=5.0)
+        fig.write_image(f'exports/svg/mathematics.svg')
+        fig.write_image(f'exports/pdf/mathematics.pdf')
+        fig.write_image(f'exports/jpg/mathematics.jpg', scale=5.0)
 
 
 
 chemObj = SubjectRating(parsers.mathematics)
-chemObj.plot(('KZ', 'UZ', 'RU', 'total'))
+chemObj.plot(('KZ', 'HK', 'IN', 'total'))
