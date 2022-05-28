@@ -92,5 +92,5 @@ class SubjectRating:
 
 
 
-chemObj = SubjectRating(parsers.mathematics)
-chemObj.plot(('KZ', 'HK', 'IN', 'total'))
+mathObj = SubjectRating(parsers.mathematics)
+mathObj.plot(('KZ', 'HK', 'IN', 'total'))
