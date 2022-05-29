@@ -23,7 +23,6 @@ class SubjectRating:
                 ),
             ),
             yaxis=dict(
-                autorange='reversed',
                 title=yAxis,
                 showgrid=False,
                 zeroline=False,
@@ -93,4 +92,4 @@ class SubjectRating:
 
 
 mathObj = SubjectRating(parsers.mathematics)
-mathObj.plot(('KZ', 'HK', 'IN', 'total'))
+mathObj.plot(('KZ', 'HK', 'KP', 'total'))
